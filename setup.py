@@ -7,7 +7,7 @@ setup(
         name = 'pgbackup',
         version = '0.1.0',
         author = 'Oleg Fortochnik',
-        author_email = 'of@gm.com',
+        author_email = 'olen2006@gmail.com',
         description = 'A utility for backing up PostgreSQL DB',
         long_description = long_description,
         long_description_content_type = 'text/markdown',
