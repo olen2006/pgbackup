@@ -7,3 +7,13 @@ def dump(url):
         print(f"Error: {err}")
         sys.exit(1)
 
+def dump_file_name(url, timestamp=None):
+    db_name = url.split('/')[-1] #post://demo:pass@ip:port/dbname
+    db_name = db_name.split('?')[0] #in case there is a query...to get rid of it
+    if timestamp:
+        return f"{db_name}-{timestamp}.sql"
+    else:
+        return f"{db_name}.sql"
+
+
+
